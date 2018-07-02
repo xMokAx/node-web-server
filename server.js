@@ -26,9 +26,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render("maintenance.hbs");
-});
+// app.use((req, res, next) => {
+//   res.render("maintenance.hbs");
+// });
 
 // use an express middleware (express.static) providing the absolute path of directory we want to serve
 app.use(express.static(__dirname + "/public"));
